@@ -1,12 +1,24 @@
+/**
+ * Styles for CSS Playing Cards
+ *
+ * @author   Anika Henke <anika@selfthinker.org>
+ * @license  CC BY-SA [http://creativecommons.org/licenses/by-sa/3.0]
+ * @version  2011-06-14
+ * @link     http://selfthinker.github.com/CSS-Playing-Cards/
+ */
+
+/* card itself
+********************************************************************/
+
 .playingCards .card {
     display: inline-block;
     width: 3.3em;
     height: 4.6em;
     border: 1px solid #666;
-    border-radius: .3em;
     -moz-border-radius: .3em;
     -webkit-border-radius: .3em;
     -khtml-border-radius: .3em;
+    border-radius: .3em;
     padding: .25em;
     margin: 0 .5em .5em 0;
     text-align: center;
