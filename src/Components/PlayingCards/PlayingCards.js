@@ -8,36 +8,36 @@ class PlayingCards extends React.Component{
         suits: ['♦', '♥', '♠', '♣'],
     };
     generate = () => {
-        console.log('trial');
-        for(let i = 0; i < 5; i++){
+        let generatedCards = [];
+        for(let i = 0; i < 5;){
             let rank = this.state.ranks[Math.floor(Math.random() * this.state.ranks.length)];
             let suit = this.state.suits[Math.floor(Math.random() * this.state.suits.length)];
             let suitName;
             switch (suit) {
                 case '♦':
-                    console.log('diams');
                     suitName = 'diams';
                     break;
                 case '♥':
-                    console.log('heart');
                     suitName = 'heart';
                     break;
                 case '♠':
-                    console.log('spades');
                     suitName = 'spades';
                     break;
                 case '♣':
-                    console.log('clubs');
                     suitName = 'clubs';
                     break;
                 default:
                     console.error('Error occured');
             }
-            let generatedCards = [];
-            generatedCards.push()
-            console.log(rank);
-            console.log(suit);
+            let newCard = {rank, suit, suitName};
+            console.log(newCard);
+            if(generatedCards.includes(newCard.rank)){
+                continue;
+            }
+            generatedCards.push(newCard);
+            i++;
         }
+        console.log(generatedCards);
     };
     render() {
         let rank = '7';
