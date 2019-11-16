@@ -1,0 +1,11 @@
+.playingCards{
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 5px 15px;
+    border: 1px solid #282c34;
+}
+.playingCards button{
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
