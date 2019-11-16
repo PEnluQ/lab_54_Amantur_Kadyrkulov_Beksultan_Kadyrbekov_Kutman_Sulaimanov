@@ -8,11 +8,12 @@ class App extends Component {
   render() {
     let rank = '7';
     let suit = 'diams';
+    let suitS = '♦';
     let className = 'card rank-' + rank + ' ' + suit;
     return(
         <div className='App'>
           <div className='playingCards'>
-          <Card className={className}/>
+            <Card className={className} rank={rank} suit={suitS}/>
           </div>
         </div>
     )
